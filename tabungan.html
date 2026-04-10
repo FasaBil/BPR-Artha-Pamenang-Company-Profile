@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabungan - BPR Syariah Artha Pamenang</title>
+    
+    <link rel="icon" href="images/logo.png" type="image/png">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Terhubung langsung ke file CSS eksternalmu -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header Area (Sama dengan Index) -->
+    <header class="top-header">
+        <div class="container header-content">
+            <a href="index.html">
+                <img src="images/title.webp" alt="BPR Syariah Artha Pamenang" class="logo" 
+                     onerror="this.onerror=null; this.outerHTML='<h1 class=\'logo-fallback\'>BPR Syariah ARTHA PAMENANG</h1>';">
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. Navigation Area (Sama dengan Index) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            
+            <a href="index.html" class="mobile-logo-link">
+                <img src="images/logo.png" alt="Logo BPR" class="mobile-logo" 
+                     onerror="this.onerror=null; this.outerHTML='<span style=\'font-weight:700;color:var(--primary-green-dark);font-size:1.1rem;letter-spacing:-0.5px;\'>BPRS AP</span>';">
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html">Beranda</a></li>
+                
+                <li class="nav-item has-dropdown">
+                    <a href="#">Corporate <span class="chevron">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Email</a></li>
+                        <li><a href="profil-perusahaan.html">Profile Perusahaan</a></li>
+                        <li><a href="#">Jaringan Kantor</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Class 'active' dipindahkan ke menu Produk -->
+                <li class="nav-item has-dropdown active">
+                    <a href="#">Produk <span class="chevron">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tabungan.html">Tabungan</a></li>
+                        <li><a href="#">Deposito</a></li>
+                        <li><a href="#">Pembiayaan</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item"><a href="#">Info & Berita</a></li>
+                <li class="nav-item"><a href="#">Hubungi Kami</a></li>
+                <li class="nav-item"><a href="#">Simulasi Pembiayaan</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- =========================================================================
+                              KONTEN HALAMAN TABUNGAN (BARU)
+    ========================================================================== -->
+    <main class="product-page">
+        <div class="container product-container">
+            
+            <!-- SECTION 1: TITLE -->
+            <div class="product-header">
+                <h1 class="page-title">Tabungan iB Syariah BPR Syariah Artha Pamenang</h1>
+                <div class="title-underline center-underline"></div>
+            </div>
+
+            <!-- SECTION 2: POSTER -->
+            <div class="product-poster">
+                <img src="images/tabungan.webp" alt="Poster Tabungan iB Syariah" 
+                     onerror="this.src='https://images.unsplash.com/photo-1579621970588-a3f5ce599fac?q=80&w=800&auto=format&fit=crop';">
+            </div>
+
+            <!-- SECTION 3: JENIS TABUNGAN -->
+            <div class="tabungan-section">
+                <div class="tabungan-grid">
+                    
+                    <!-- Card 1 -->
+                    <div class="tabungan-card">
+                        <div class="card-icon">1</div>
+                        <h3 class="tabungan-title">Tabungan Wadiah</h3>
+                        <p class="tabungan-desc">
+                            Tabungan dengan setoran awal <strong>10 ribu rupiah</strong>, saldo mengendap <strong>10 ribu rupiah</strong>, gratis biaya admin bulanan.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="tabungan-card">
+                        <div class="card-icon">2</div>
+                        <h3 class="tabungan-title">Tabungan Mudharabah</h3>
+                        <p class="tabungan-desc">
+                            Tabungan dengan setoran awal <strong>1 juta rupiah</strong>, saldo mengendap <strong>100 ribu rupiah</strong>, gratis biaya admin bulanan, bagi hasil atau nisbah sesuai prinsip syariah, cocok untuk tabungan investasi.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="tabungan-card">
+                        <div class="card-icon">3</div>
+                        <h3 class="tabungan-title">Tabungan Gaul</h3>
+                        <p class="tabungan-desc">
+                            Tabungan dengan setoran awal hanya <strong>10 ribu rupiah</strong>, <strong>tidak ada</strong> saldo mengendap, gratis biaya admin bulanan, sesuai untuk kawula muda atau milenial yang ingin menabung sejak usia muda.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SECTION 4: SYARAT -->
+            <div class="requirement-section">
+                <h2 class="req-title">Syarat Pembukaan Rekening</h2>
+                <ul class="req-list">
+                    <li>Copy KTP / SIM / Kartu Pelajar</li>
+                </ul>
+                <p class="req-footnote">* hubungi kantor BPR Syariah Artha Pamenang terdekat</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 8. Footer Area (Sama dengan Index) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-map-col">
+                    <div class="map-responsive-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d505963.10706433153!2d112.033816!3d-7.807098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78574358102481%3A0x51541f04ee07e9fb!2sArtha%20Pamenang%20Syariah%20Kediri!5e0!3m2!1sid!2sus!4v1773738257388!5m2!1sid!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h2 class="footer-title">Hubungi Kami</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>mailing@arthapamenangsyariah.com</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Kantor Pusat : JL. Soekarno Hatta 107A, Tepus - Sukorejo, Kec. Ngasem, Kabupaten Kediri, Jawa Timur, 64182</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>Telp : 0354-694123</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="visitor-counter-container">
+                    <span class="visitor-label">Statistik Pengunjung</span>
+                    <div class="visitor-counter-scripts">
+                        <a href='https://www.counters-free.net/'>https://www.counters-free.net</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=852b3a4d00bce881cfc6344b1836bfa77ab8b115'></script>
+                        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1519255/t/0"></script>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

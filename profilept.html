@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Perusahaan - BPR Syariah Artha Pamenang</title>
+    
+    <link rel="icon" href="images/logo.png" type="image/png">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Terhubung langsung ke file CSS eksternalmu -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header Area (Sama dengan Index) -->
+    <header class="top-header">
+        <div class="container header-content">
+            <a href="index.html">
+                <img src="images/title.webp" alt="BPR Syariah Artha Pamenang" class="logo" 
+                     onerror="this.onerror=null; this.outerHTML='<h1 class=\'logo-fallback\'>BPR Syariah ARTHA PAMENANG</h1>';">
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. Navigation Area (Sama dengan Index) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            
+            <a href="index.html" class="mobile-logo-link">
+                <img src="images/logo.png" alt="Logo BPR" class="mobile-logo" 
+                     onerror="this.onerror=null; this.outerHTML='<span style=\'font-weight:700;color:var(--primary-green-dark);font-size:1.1rem;letter-spacing:-0.5px;\'>BPRS AP</span>';">
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html">Beranda</a></li>
+                
+                <!-- Class 'active' dipindahkan ke menu Corporate -->
+                <li class="nav-item has-dropdown active">
+                    <a href="#">Corporate <span class="chevron">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Email</a></li>
+                        <li><a href="profil-perusahaan.html">Profile Perusahaan</a></li>
+                        <li><a href="#">Jaringan Kantor</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item has-dropdown">
+                    <a href="#">Produk <span class="chevron">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Tabungan</a></li>
+                        <li><a href="#">Deposito</a></li>
+                        <li><a href="#">Pembiayaan</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item"><a href="#">Info & Berita</a></li>
+                <li class="nav-item"><a href="#">Hubungi Kami</a></li>
+                <li class="nav-item"><a href="#">Simulasi Pembiayaan</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- =========================================================================
+                              KONTEN HALAMAN PROFIL (BARU)
+    ========================================================================== -->
+    <main class="corporate-page">
+        <!-- Watermark Background -->
+        <div class="watermark-bg"></div>
+
+        <div class="container">
+            
+            <!-- SECTION 1: Profil Perusahaan -->
+            <section class="corp-section">
+                <h1 class="corp-title">Profil Perusahaan</h1>
+                <p class="corp-text">
+                    Seperti diketahui, perkembangan Bank Syariah terutama yang berbentuk Bank Pembiayaan Rakyat Syariah masih jauh tertinggal dibanding dengan Bank Konvensional, konsep perbankan konvensional yang telah melekat dan mendarah daging tidak mungkin diubah dengan konsep syariah dalam waktu yang singkat. Namun demikian, didasari atas komitmen dan tujuan untuk berusaha di bidang perbankan syariah, berdirinya BPR Syariah Artha Pamenang berawal dari keinginan para pendiri yang utamanya untuk turut serta membangun bangsa dalam pemberdayaan dan pengembangan ekonomi berbasis Syariah Islam khususnya di wilayah Kediri.
+                </p>
+                <p class="corp-text">
+                    PT Bank Pembiayaan Rakyat Syariah Artha Pamenang adalah Bank atau Lembaga Keuangan milik swasta yang berkedudukan di Kediri Jawa Timur. PT Bank Pembiayaan Rakyat Syariah Artha Pamenang didirikan pada tanggal 23 Maret 2010, berdasarkan akta nomor 162, tanggal 29 Oktober 2009 yang dibuat oleh Notaris Paulus Bingadiputra, SH dan telah mendapatkan persetujuan dan pengesahan dari Menteri Hukum dan Hak Asasi Manusia Republik Indonesia, sesuai Surat Keputusan Nomor AHU-57676.AH.01.01 Tanggal 25, Bulan Nopember, Tahun 2009.
+                </p>
+                <p class="corp-text" style="font-weight: 600;">
+                    Modal inti adalah sebesar Rp. 8.000.000.000 dan modal disetor saat ini adalah sebesar Rp. 6.000.000.000.
+                </p>
+            </section>
+
+            <!-- SECTION 2: Pemegang Saham -->
+            <section class="corp-section">
+                <h2 class="corp-subtitle">Pemegang Saham PT Bank Pembiayaan Rakyat Syariah Artha Pamenang</h2>
+                <div class="table-responsive">
+                    <table class="corp-table">
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Status Pemegang Saham</th>
+                                <th>Saham</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Harijanto Hiendarto</td>
+                                <td>Pengendali</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>Drs. Eka Susanto Widadi Sunarso</td>
+                                <td>-</td>
+                                <td>18.75%</td>
+                            </tr>
+                            <tr>
+                                <td>Hadi Soetirto</td>
+                                <td>-</td>
+                                <td>18.75%</td>
+                            </tr>
+                            <tr>
+                                <td>Mintarya</td>
+                                <td>-</td>
+                                <td>18.75%</td>
+                            </tr>
+                            <tr>
+                                <td>Yudiono Muktiwidjojo</td>
+                                <td>-</td>
+                                <td>18.75%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION 3: Pengurus -->
+            <section class="corp-section">
+                <h2 class="corp-subtitle">Pengurus PT Bank Pembiayaan Rakyat Syariah Artha Pamenang</h2>
+                <div class="table-responsive">
+                    <table class="corp-table">
+                        <thead>
+                            <tr>
+                                <th>Direksi</th>
+                                <th>Dewan Komisaris</th>
+                                <th>Dewan Pengawas Syariah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Drs. H Suhardi</strong><br><span class="text-muted">(Direktur Utama)</span></td>
+                                <td><strong>Aziz Affandi Durbajani, SH</strong><br><span class="text-muted">(Komisaris Utama)</span></td>
+                                <td><strong>Sulistyo Wahono, S.Ag</strong><br><span class="text-muted">(Ketua Dewan Pengawas Syariah)</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Setyawati, ST</strong><br><span class="text-muted">(Direktur Kepatuhan)</span></td>
+                                <td><strong>Yudhi Irwanto</strong><br><span class="text-muted">(Komisaris)</span></td>
+                                <td><strong>Ropingi, S.Ag., M.Pd</strong><br><span class="text-muted">(Dewan Pengawas Syariah)</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION 4: Visi Misi -->
+            <section class="corp-section">
+                <h2 class="corp-subtitle text-center">Visi dan Misi</h2>
+                <div class="vm-quotes">
+                    <div class="vm-box">
+                        <h4>Visi</h4>
+                        <p>“Menjadi Mitra Sejati dalam Pengembangan Ekonomi Umat”</p>
+                    </div>
+                    <div class="vm-box">
+                        <h4>Misi</h4>
+                        <p>“Turut Serta Membangun Bangsa melalui Pengembangan Ekonomi Syariah”</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: Struktur Organisasi -->
+            <section class="corp-section">
+                <h2 class="corp-subtitle">Struktur Organisasi</h2>
+                <img src="images/struktur.webp" alt="Struktur Organisasi BPR Syariah Artha Pamenang" class="corp-img"
+                     onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop';">
+            </section>
+
+            <!-- SECTION 6: Jaringan Kantor -->
+            <section class="corp-section">
+                <h2 class="corp-subtitle">Jaringan Kantor</h2>
+                <img src="images/jaringankantor.webp" alt="Peta Jaringan Kantor BPR Syariah Artha Pamenang" class="corp-img"
+                     onerror="this.src='https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop';">
+            </section>
+
+            <!-- SECTION 7: Daftar Kantor -->
+            <section class="corp-section">
+                <h2 class="corp-subtitle">Daftar Kantor</h2>
+                <div class="office-grid">
+                    
+                    <div class="office-card main-office">
+                        <h3 class="office-name">Kantor Pusat</h3>
+                        <p class="office-detail">Jl. Soekarno Hatta No. 107-A, Tepus – Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 694123</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Pare</h3>
+                        <p class="office-detail">Jl. Pahlawan Kusuma Bangsa No.13-C, Pare – Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 396789</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Gringging</h3>
+                        <p class="office-detail">Jl. Raya Gringging No. 36, Grogol – Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 770234</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Sambi</h3>
+                        <p class="office-detail">Jl. Raya Sambi No. 56, Sambi – Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 411566</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Gurah</h3>
+                        <p class="office-detail">Jl. Dr. Wahidin No. 152-B, Gurah – Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 548345</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Ngadiluwih</h3>
+                        <p class="office-detail">Jl. Prof. Dr. Moestopo No. 479, Ngadiluwih – Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 475555</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Bogo</h3>
+                        <p class="office-detail">Jl. RA. Kartini No. 46, Plemahan – Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 4521266</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Wates</h3>
+                        <p class="office-detail">Jl. Raya Tawang No. 12 , Wates – Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 7412242</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Kandangan</h3>
+                        <p class="office-detail">Jl. Raya Kandangan No. 10, Kandangan – Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 3250555</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Warujayeng</h3>
+                        <p class="office-detail">Jl. A. Yani No. 144, Warujayeng – Nganjuk</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0358 - 5281599</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Kepung</h3>
+                        <p class="office-detail">Ruko Halbanero Jl. Harinjing No. 166, Kepung - Kediri</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0354 - 3251010</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Cabang Jombang</h3>
+                        <p class="office-detail">Jl. KH. Hasyim Asyari 1 No. 2-C, Kaliwungu - Jombang</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0321 - 5288886</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Kas Jetis</h3>
+                        <p class="office-detail">Jl. Panglima Sudirman No. 89 Kupang, Jetis - Mojokerto</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0321 - 3671777</p>
+                    </div>
+                    <div class="office-card">
+                        <h3 class="office-name">Kantor Cabang Madiun</h3>
+                        <p class="office-detail">Jl. Raya Madiun Solo No. 119-A, Jiwan - Madiun</p>
+                        <p class="office-detail"><strong>Telp :</strong> 0351 - 4472277</p>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- 8. Footer Area (Sama dengan Index) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-map-col">
+                    <div class="map-responsive-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d505963.10706433153!2d112.033816!3d-7.807098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78574358102481%3A0x51541f04ee07e9fb!2sArtha%20Pamenang%20Syariah%20Kediri!5e0!3m2!1sid!2sus!4v1773738257388!5m2!1sid!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h2 class="footer-title">Hubungi Kami</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>mailing@arthapamenangsyariah.com</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Kantor Pusat : JL. Soekarno Hatta 107A, Tepus - Sukorejo, Kec. Ngasem, Kabupaten Kediri, Jawa Timur, 64182</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>Telp : 0354-694123</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="visitor-counter-container">
+                    <span class="visitor-label">Statistik Pengunjung</span>
+                    <div class="visitor-counter-scripts">
+                        <a href='https://www.counters-free.net/'>https://www.counters-free.net</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=852b3a4d00bce881cfc6344b1836bfa77ab8b115'></script>
+                        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1519255/t/0"></script>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
