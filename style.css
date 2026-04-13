@@ -655,7 +655,7 @@ img {
 }
 
 .product-card:hover .product-img-wrapper img {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 .product-content {
@@ -734,7 +734,7 @@ img {
 }
 
 .info-poster:hover img {
-    transform: scale(1.05); 
+    /* transform: scale(1.05);  */
 }
 
 /* --- 11. Footer Section --- */
