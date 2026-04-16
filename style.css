@@ -643,17 +643,15 @@ img {
 
 .product-img-wrapper {
     width: 100%;
-    aspect-ratio: 3 / 4;         /* rasio portrait poster vertikal, sama di semua kartu */
-    overflow: hidden;             /* clip di sini, bukan di card, agar hover tidak memotong */
+    /* Tidak ada fixed height — biarkan tinggi mengikuti poster aslinya */
+    overflow: hidden;
     position: relative;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .product-img-wrapper img {
     width: 100%;
-    height: 100%;                /* isi seluruh wrapper */
-    object-fit: cover;           /* isi proporsional — tidak distorsi */
-    object-position: top center; /* prioritaskan bagian atas poster */
+    height: auto;                /* tampilkan poster penuh, tidak ada yang terpotong */
     display: block;
     transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
