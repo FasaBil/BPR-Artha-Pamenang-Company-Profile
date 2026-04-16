@@ -627,7 +627,7 @@ img {
 .product-card {
     background-color: var(--bg-white);
     border-radius: var(--radius-lg);
-    overflow: hidden;
+    /* overflow: hidden removed — moved to img-wrapper so hover translateY doesn't clip the image */
     box-shadow: var(--shadow-soft);
     border: 1px solid rgba(14, 102, 18, 0.05);
     transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
@@ -643,19 +643,23 @@ img {
 
 .product-img-wrapper {
     width: 100%;
-    overflow: hidden;
+    height: 260px;               /* fixed height so all images are the same size */
+    overflow: hidden;             /* clip here, not on the card, so hover doesn't cut the image */
     position: relative;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0; /* top corners follow the card */
 }
 
 .product-img-wrapper img {
     width: 100%;
-    height: auto;
+    height: 100%;                /* fill the fixed-height wrapper */
+    object-fit: cover;           /* crop proportionally to fill — no distortion */
+    object-position: top;        /* keep the top of the image visible */
     display: block;
     transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .product-card:hover .product-img-wrapper img {
-    /* transform: scale(1.05); */
+    transform: scale(1.05);
 }
 
 .product-content {
