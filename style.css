@@ -657,7 +657,8 @@ img {
 }
 
 .product-card:hover .product-img-wrapper img {
-    transform: scale(1.05);
+    /* Zoom dihapus — gambar mepet border sehingga scale menyebabkan terpotong */
+    transform: none;
 }
 
 .product-content {
