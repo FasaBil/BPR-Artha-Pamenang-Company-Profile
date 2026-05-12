@@ -571,9 +571,11 @@ h1, h2, h3 {
     transition: all var(--transition-smooth);
 }
 
-.value-card:hover .icon-wrapper svg {
+.value-card:hover .icon-wrapper svg,
+.value-card:hover .icon-wrapper img {
     stroke: var(--bg-white) !important;
     fill: var(--bg-white) !important;
+    filter: brightness(0) invert(1);
 }
 
 .value-title {
