@@ -8,11 +8,11 @@
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home">
 
     <!-- 1. Header Area -->
     <header class="top-header">
@@ -20,6 +20,9 @@
             <a href="#">
                 <img src="images/title.webp" alt="BPR Syariah Artha Pamenang" class="logo"
                     onerror="this.onerror=null; this.outerHTML='<h1 class=\'logo-fallback\'>BPR Syariah ARTHA PAMENANG</h1>';">
+            </a>
+            <a href="#" class="header-partner">
+                <img src="images/bprsyariah.webp" alt="BPR Syariah Sahabat UMKM">
             </a>
         </div>
     </header>
@@ -72,413 +75,450 @@
         </div>
     </nav>
 
-    <!-- 3. Hero Section (Slideshow) -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="slider-wrapper">
+    <!-- SECTION GROUP 1: Background 1 -->
+    <div class="bg-section-1">
+        <!-- 3. Hero Section (Slideshow) -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <!-- Overlay Removed -->
 
-                <div class="slider-overlay"></div>
-
-                <!-- Hero Tagline Overlay -->
-                <div class="hero-tagline">
-                    <div class="hero-tagline-label">BPR Syariah Artha Pamenang</div>
-                    <h2 class="hero-tagline-title">Solusi Keuangan Syariah<br>Terpercaya &amp; Berkah</h2>
-                </div>
-
-                <!-- Slide Items -->
-                <div class="slides-container">
-                    <div class="slide active">
-                        <img src="images/slideshow1.webp" alt="Gedung Artha Pamenang"
-                            onerror="this.src='https://images.unsplash.com/photo-1541359927273-d76820fc43f9?q=80&w=1200&auto=format&fit=crop';">
-                    </div>
-                    <div class="slide">
-                        <img src="images/slideshow2.webp" alt="Layanan Perbankan Syariah"
-                            onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop';">
-                    </div>
-                    <div class="slide">
-                        <img src="images/slideshow3.webp" alt="Promo Pembiayaan"
-                            onerror="this.src='https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1200&auto=format&fit=crop';">
-                    </div>
-                </div>
-
-                <!-- Navigasi Panah -->
-                <button class="slider-arrow prev-btn" aria-label="Previous Slide">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                </button>
-                <button class="slider-arrow next-btn" aria-label="Next Slide">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
-
-                <!-- Indikator -->
-                <div class="slider-dots"></div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Banner Section -->
-    <section class="cta-banner-section reveal">
-        <div class="cta-deco cta-deco-1"></div>
-        <div class="cta-deco cta-deco-2"></div>
-        <div class="cta-deco cta-deco-3"></div>
-        <div class="container cta-banner-content">
-            <div class="cta-text">
-                <span class="cta-eyebrow">Bergabung Sekarang</span>
-                <h2 class="cta-title">Wujudkan Impian Anda<br>Bersama Kami</h2>
-                <p class="cta-desc">Bergabunglah dengan ribuan nasabah yang telah mempercayakan kebutuhan keuangan
-                    mereka kepada BPR Syariah Artha Pamenang — aman, mudah, dan berkah.</p>
-            </div>
-            <div class="cta-actions">
-                <a href="#" class="cta-btn-gold">Simulasi Pembiayaan</a>
-                <a href="kontak.html" class="cta-btn-outline">Hubungi Kami</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Values & Profile Section -->
-    <section class="values-profile-section">
-        <div class="container">
-
-            <!-- Part 1: Company Values (3 Cards) -->
-            <div class="values-grid">
-
-                <!-- Card 1 -->
-                <div class="value-card">
-                    <div class="icon-wrapper">
-                        <img src="images/amanah.webp" alt="Amanah"
-                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230e6612\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\'/></svg>';">
-                    </div>
-                    <h3 class="value-title">Amanah</h3>
-                    <p class="value-desc">Didukung oleh karyawan dan karyawati profesional, management yang handal,
-                        diawasi OJK, serta dijamin oleh LPS.</p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="value-card">
-                    <div class="icon-wrapper">
-                        <img src="images/mudah.webp" alt="Mudah"
-                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230e6612\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><polygon points=\'13 2 3 14 12 14 11 22 21 10 12 10 13 2\'/></svg>';">
-                    </div>
-                    <h3 class="value-title">Mudah</h3>
-                    <p class="value-desc">Tabungan, Deposito dan Pengajuan Pembiayaan, dijamin mudah, dengan syarat dan
-                        ketentuan sesuai regulasi OJK.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="value-card">
-                    <div class="icon-wrapper">
-                        <img src="images/berkah.webp" alt="Berkah"
-                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230e6612\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\'/></svg>';">
-                    </div>
-                    <h3 class="value-title">Berkah</h3>
-                    <p class="value-desc">Halal, Bermanfaat dan Menjadi Berkah untuk seluruh nasabah, karena dijalankan
-                        sesuai dengan prinsip Syariah.</p>
-                </div>
-
-            </div>
-
-            <!-- Part 2: Short Company Profile -->
-            <div class="profile-container">
-
-                <div class="profile-image-col">
-                    <div class="image-frame">
-                        <img src="images/profile.webp" alt="Profil Singkat BPR Syariah Artha Pamenang"
-                            onerror="this.src='https://images.unsplash.com/photo-1556761175-5973dc0f32d7?q=80&w=800&auto=format&fit=crop';">
-
-                        <div class="floating-badge">
-                            <span class="badge-year">2010</span>
-                            <span class="badge-text">Berdiri &<br>Melayani</span>
+                    <!-- Slide Items -->
+                    <div class="slides-container">
+                        <div class="slide active">
+                            <img src="images/slideshow1.webp" alt="Gedung Artha Pamenang"
+                                onerror="this.src='https://images.unsplash.com/photo-1541359927273-d76820fc43f9?q=80&w=1200&auto=format&fit=crop';">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshow2.webp" alt="Layanan Perbankan Syariah"
+                                onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop';">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshow3.webp" alt="Promo Pembiayaan"
+                                onerror="this.src='https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1200&auto=format&fit=crop';">
                         </div>
                     </div>
-                </div>
 
-                <div class="profile-text-col">
-                    <h2 class="section-title">PROFIL SINGKAT</h2>
-                    <div class="title-underline"></div>
-                    <p class="profile-paragraph">
-                        PT. Bank Pembiayaan Rakyat Syariah Artha Pamenang berdiri pada tanggal 23 maret 2010,
-                        berdasarkan akta nomor 162 tanggal 29 oktober 2009 dan telah mendapatkan persetujuan dari
-                        Kementerian Hukum dan Hak Asasi Manusia Republik Indonesia, sesuai surat keputusan nomor
-                        AHU-57676.01.01 tahun 2009 tanggal 25 Nopember 2009.
-                    </p>
-                    <p class="profile-paragraph">
-                        BPR Syariah Artha Pamenang ini merupakan BPR Syariah pertama yang dimiliki oleh Group Artha
-                        Pamenang setelah 3 BPR konvensional yang telah beroperasi lebih dari 20 tahun.
-                    </p>
-                </div>
+                    <!-- Navigasi Panah -->
+                    <button class="slider-arrow prev-btn" aria-label="Previous Slide">
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="currentColor"><polygon points="13 0 13 18 0 9"></polygon></svg>
+                    </button>
+                    <button class="slider-arrow next-btn" aria-label="Next Slide">
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="currentColor"><polygon points="1 0 1 18 14 9"></polygon></svg>
+                    </button>
 
+                    <!-- Indikator -->
+                    <div class="slider-dots"></div>
+
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- 5. Visi, Misi & Motto Section -->
-    <section class="vmm-section reveal">
-        <div class="container">
-            <div class="vmm-grid">
-
-                <!-- Item 1: Visi -->
-                <div class="vmm-card">
-                    <div class="vmm-img-wrapper">
-                        <img src="images/visi.webp" alt="Visi BPR Syariah Artha Pamenang"
-                            onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop';">
-                    </div>
-                    <div class="vmm-content">
-                        <h3 class="vmm-title">Visi</h3>
-                        <p class="vmm-desc">Menjadi Mitra Sejati dalam Pengembangan Ekonomi Umat.</p>
-                    </div>
+        <!-- CTA Banner Section -->
+        <section class="cta-banner-section reveal">
+            <div class="container">
+              <div class="cta-banner-content">
+                <div class="cta-text">
+                    <span class="cta-eyebrow">BERGABUNG SEKARANG</span>
+                    <h2 class="cta-title">Wujudkan Impian Anda<br>Bersama Kami</h2>
+                    <p class="cta-desc">Bergabunglah dengan ribuan nasabah yang telah mempercayakan kebutuhan keuangan
+                        mereka kepada BPR Syariah Artha Pamenang — aman, mudah, dan berkah.</p>
                 </div>
-
-                <!-- Item 2: Misi -->
-                <div class="vmm-card">
-                    <div class="vmm-img-wrapper">
-                        <img src="images/misi.webp" alt="Misi BPR Syariah Artha Pamenang"
-                            onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop';">
-                    </div>
-                    <div class="vmm-content">
-                        <h3 class="vmm-title">Misi</h3>
-                        <p class="vmm-desc">Ikut Serta Membangun Bangsa Melalui Pengembangan Ekonomi Syariah.</p>
-                    </div>
+                <div class="cta-actions">
+                    <a href="#" class="cta-btn-gold">Simulasi Pembiayaan</a>
+                    <a href="kontak.html" class="cta-btn-outline">Hubungi Kami</a>
                 </div>
-
-                <!-- Item 3: Motto -->
-                <div class="vmm-card">
-                    <div class="vmm-img-wrapper">
-                        <img src="images/motto.webp" alt="Motto BPR Syariah Artha Pamenang"
-                            onerror="this.src='https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop';">
-                    </div>
-                    <div class="vmm-content">
-                        <h3 class="vmm-title">Motto</h3>
-                        <p class="vmm-desc">Dengan Syariah Hidup Lebih Barokah</p>
-                    </div>
-                </div>
-
+              </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- 5a. Keunggulan / Mengapa Memilih Kami -->
-    <section class="keunggulan-section reveal" id="keunggulan">
-        <div class="container">
-            <h2 class="section-title text-center">Mengapa Memilih Kami?</h2>
-            <div class="title-underline center-underline"></div>
-            <div class="keunggulan-grid">
+    <!-- SECTION GROUP 2: Background 2 -->
+    <div class="bg-section-2">
+        <!-- 4. Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <!-- Part 1: Company Values (3 Cards) -->
+                <div class="values-grid">
 
-                <!-- Card 1 -->
-                <div class="keunggulan-card reveal reveal-delay-1">
-                    <div class="keunggulan-icon-wrap">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                        </svg>
+                    <!-- Card 1 -->
+                    <div class="value-card">
+                        <div class="icon-wrapper">
+                            <img src="images/amanah.webp" alt="Amanah"
+                                onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230e6612\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\'/></svg>';">
+                        </div>
+                        <h3 class="value-title">Amanah</h3>
+                        <p class="value-desc">Didukung oleh SDM profesional dan berintegritas, management perusahaan
+                            yang kredibel dan akuntabel, di awasi oleh OJK serta dijamin oleh LPS.</p>
                     </div>
-                    <h3 class="keunggulan-title">Diawasi OJK &amp; Dijamin LPS</h3>
-                    <p class="keunggulan-desc">Dana Anda terlindungi dan terjamin keamanannya sesuai regulasi nasional.
-                    </p>
-                </div>
 
-                <!-- Card 2 -->
-                <div class="keunggulan-card reveal reveal-delay-2">
-                    <div class="keunggulan-icon-wrap">
-                        <svg viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" />
-                            <polyline points="12 6 12 12 16 14" />
-                        </svg>
+                    <!-- Card 2 -->
+                    <div class="value-card">
+                        <div class="icon-wrapper">
+                            <img src="images/mudah.webp" alt="Mudah"
+                                onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230e6612\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><polygon points=\'13 2 3 14 12 14 11 22 21 10 12 10 13 2\'/></svg>';">
+                        </div>
+                        <h3 class="value-title">Mudah</h3>
+                        <p class="value-desc">Proses pelayanan yang mudah dan transparan dengan menerapkan regulasi OJK
+                            secara update.</p>
                     </div>
-                    <h3 class="keunggulan-title">Proses Cepat &amp; Mudah</h3>
-                    <p class="keunggulan-desc">Pengajuan pembiayaan dengan syarat minimal dan proses yang transparan.
-                    </p>
-                </div>
 
-                <!-- Card 3 -->
-                <div class="keunggulan-card reveal reveal-delay-3">
-                    <div class="keunggulan-icon-wrap">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                        </svg>
+                    <!-- Card 3 -->
+                    <div class="value-card">
+                        <div class="icon-wrapper">
+                            <img src="images/berkah.webp" alt="Berkah"
+                                onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230e6612\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\'/></svg>';">
+                        </div>
+                        <h3 class="value-title">Berkah</h3>
+                        <p class="value-desc">Halal, Bermanfaat dan Menjadi Berkah untuk seluruh nasabah, karena
+                            dijalankan sesuai dengan prinsip Syariah.</p>
                     </div>
-                    <h3 class="keunggulan-title">Prinsip Syariah Murni</h3>
-                    <p class="keunggulan-desc">Seluruh produk dirancang sesuai prinsip syariah Islam — halal, berkah,
-                        dan bebas riba.</p>
-                </div>
 
-                <!-- Card 4 -->
-                <div class="keunggulan-card reveal reveal-delay-1">
-                    <div class="keunggulan-icon-wrap">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                        </svg>
-                    </div>
-                    <h3 class="keunggulan-title">Melayani Masyarakat Kediri</h3>
-                    <p class="keunggulan-desc">Sejak 2010, kami hadir melayani masyarakat Kediri dan sekitarnya dengan
-                        sepenuh hati.</p>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- 6. Produk Keuangan Section -->
-    <section class="products-section">
-        <div class="container">
-            <h2 class="section-title text-center">Produk Keuangan</h2>
-            <div class="title-underline center-underline"></div>
+    <!-- SECTION GROUP 3: Background 3 -->
+    <div class="bg-section-3">
+        <!-- 4b. Profile Section -->
+        <section class="profile-section">
+            <div class="container">
+                <!-- Part 2: Short Company Profile -->
+                <div class="profile-container">
 
-            <div class="products-grid">
+                    <div class="profile-image-col">
+                        <div class="image-frame">
+                            <img src="images/profile.webp" alt="Profil Singkat BPR Syariah Artha Pamenang"
+                                onerror="this.src='https://images.unsplash.com/photo-1556761175-5973dc0f32d7?q=80&w=800&auto=format&fit=crop';">
+                        </div>
+                    </div>
 
-                <!-- Product 1: Pembiayaan -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <img src="images/tabungan_m.webp" alt="Pembiayaan iB Syariah"
-                            onerror="this.src='https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=600&auto=format&fit=crop';">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Pembiayaan iB Syariah</h3>
-                        <p class="product-desc">Solusi pembiayaan untuk kebutuhan konsumtif, modal kerja, dan multijasa
-                            sesuai prinsip syariah.</p>
-                        <a href="pembiayaan.html" class="btn-primary">Lihat Detail</a>
-                    </div>
-                </div>
-
-                <!-- Product 2: Deposito -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <img src="images/deposito.webp" alt="Deposito iB Syariah"
-                            onerror="this.src='https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=600&auto=format&fit=crop';">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Deposito iB Syariah</h3>
-                        <p class="product-desc">Produk investasi dengan sistem bagi hasil kompetitif yang sesuai dengan
-                            prinsip ekonomi syariah.</p>
-                        <a href="deposito.html" class="btn-primary">Lihat Detail</a>
-                    </div>
-                </div>
-
-                <!-- Product 3: Tabungan -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <img src="images/tabungan_w.webp" alt="Tabungan iB Syariah"
-                            onerror="this.src='https://images.unsplash.com/photo-1579621970588-a3f5ce599fac?q=80&w=600&auto=format&fit=crop';">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Tabungan iB Syariah</h3>
-                        <p class="product-desc">Tabungan Aman, Pasti, Syariah untuk mendukung kebutuhan finansial Anda.
+                    <div class="profile-text-col">
+                        <h2 class="section-title">PROFIL SINGKAT</h2>
+                        <div class="title-underline"></div>
+                        <p class="profile-paragraph">
+                            PT. Bank Pembiayaan Rakyat Syariah Artha Pamenang berdiri pada tanggal 23 maret 2010,
+                            berdasarkan akta nomor 162 tanggal 29 oktober 2009 dan telah mendapatkan persetujuan dari
+                            Kementerian Hukum dan Hak Asasi Manusia Republik Indonesia, sesuai surat keputusan nomor
+                            AHU-57676.01.01 tahun 2009 tanggal 25 Nopember 2009.
                         </p>
-                        <a href="tabungan.html" class="btn-primary">Lihat Detail</a>
+                        <p class="profile-paragraph">
+                            BPR Syariah Artha Pamenang ini merupakan BPR Syariah pertama yang dimiliki oleh Group Artha
+                            Pamenang setelah 3 BPR konvensional yang telah beroperasi lebih dari 20 tahun.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Visi, Misi & Motto Section -->
+        <section class="vmm-section reveal">
+            <div class="container">
+                <div class="vmm-grid">
+
+                    <!-- Item 1: Visi -->
+                    <div class="vmm-card">
+                        <div class="vmm-img-wrapper">
+                            <img src="images/visi.webp" alt="Visi BPR Syariah Artha Pamenang"
+                                onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop';">
+                        </div>
+                        <div class="vmm-content">
+                            <h3 class="vmm-title">Visi</h3>
+                            <p class="vmm-desc">Menjadi Mitra Sejati dalam Pengembangan Ekonomi Umat.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Misi -->
+                    <div class="vmm-card">
+                        <div class="vmm-img-wrapper">
+                            <img src="images/misi.webp" alt="Misi BPR Syariah Artha Pamenang"
+                                onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop';">
+                        </div>
+                        <div class="vmm-content">
+                            <h3 class="vmm-title">Misi</h3>
+                            <p class="vmm-desc">Ikut Serta Membangun Bangsa Melalui Pengembangan Ekonomi Syariah.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Motto -->
+                    <div class="vmm-card">
+                        <div class="vmm-img-wrapper">
+                            <img src="images/motto.webp" alt="Motto BPR Syariah Artha Pamenang"
+                                onerror="this.src='https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop';">
+                        </div>
+                        <div class="vmm-content">
+                            <h3 class="vmm-title">Motto</h3>
+                            <p class="vmm-desc">Dengan Syariah Hidup Lebih Barokah.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SECTION GROUP 4: Background 2 -->
+    <div class="bg-section-2">
+        <!-- 5a. Keunggulan / Mengapa Memilih Kami -->
+        <section class="keunggulan-section reveal" id="keunggulan">
+            <div class="container container-mid">
+                <h2 class="section-title text-center">Mengapa Memilih Kami?</h2>
+                <div class="keunggulan-grid">
+
+                    <!-- Card 1 -->
+                    <div class="keunggulan-card reveal reveal-delay-1">
+                        <div class="keunggulan-icon-wrap">
+                            <img src="images/ojk.webp" alt="Diawasi OJK"
+                                onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230e6612\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\'/></svg>';">
+                        </div>
+                        <h3 class="keunggulan-title">Diawasi OJK</h3>
+                        <p class="keunggulan-desc">BPR Syariah Artha Pamenang berizin dan diawasi oleh OJK</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="keunggulan-card reveal reveal-delay-2">
+                        <div class="keunggulan-icon-wrap">
+                            <img src="images/lps.webp" alt="Dijamin LPS"
+                                onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230e6612\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><rect x=\'3\' y=\'11\' width=\'18\' height=\'11\' rx=\'2\' ry=\'2\'></rect><path d=\'M7 11V7a5 5 0 0 1 10 0v4\'></path></svg>';">
+                        </div>
+                        <h3 class="keunggulan-title">Dijamin LPS</h3>
+                        <p class="keunggulan-desc">BPR Syariah Artha Pamenang merupakan peserta penjaminan LPS (hingga Rp. 2 Miliar)</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="keunggulan-card reveal reveal-delay-3">
+                        <div class="keunggulan-icon-wrap">
+                            <img src="images/cepat.webp" alt="Proses Cepat &amp; Mudah"
+                                onerror="this.onerror=null; this.outerHTML='<svg viewBox=\'0 0 24 24\'><circle cx=\'12\' cy=\'12\' r=\'10\' /><polyline points=\'12 6 12 12 16 14\' /></svg>';">
+                        </div>
+                        <h3 class="keunggulan-title">Proses Cepat &amp; Mudah</h3>
+                        <p class="keunggulan-desc">Pengajuan pembiayaan dengan syarat minimal dan proses yang
+                            transparan.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="keunggulan-card reveal reveal-delay-4">
+                        <div class="keunggulan-icon-wrap">
+                            <img src="images/syariah.webp" alt="Prinsip Syariah Murni"
+                                onerror="this.onerror=null; this.outerHTML='<svg viewBox=\'0 0 24 24\'><path d=\'M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z\' /></svg>';">
+                        </div>
+                        <h3 class="keunggulan-title">Prinsip Syariah Murni</h3>
+                        <p class="keunggulan-desc">Seluruh produk dirancang sesuai prinsip syariah Islam — halal,
+                            berkah, dan bebas riba.</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="keunggulan-card reveal reveal-delay-5">
+                        <div class="keunggulan-icon-wrap">
+                            <img src="images/kediri.webp" alt="Melayani Masyarakat Kediri"
+                                onerror="this.onerror=null; this.outerHTML='<svg viewBox=\'0 0 24 24\'><path d=\'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\' /><circle cx=\'9\' cy=\'7\' r=\'4\' /></svg>';">
+                        </div>
+                        <h3 class="keunggulan-title">Melayani Masyarakat<br>Kediri</h3>
+                        <p class="keunggulan-desc">Sejak 2010, kami hadir melayani masyarakat Kediri dan sekitarnya
+                            dengan sepenuh hati.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SECTION GROUP 5: Background 3 -->
+    <div class="bg-section-3">
+        <!-- 6. Produk Keuangan Section -->
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title text-center text-white">Simpanan<br>di Artha Pamenang Syariah</h2>
+
+                <div class="products-grid">
+
+                    <!-- Product 1: Tabungan iB Wadiah -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/tabungan_wadiah.webp" alt="Tabungan iB Wadiah"
+                                onerror="this.src='https://images.unsplash.com/photo-1579621970588-a3f5ce599fac?q=80&w=600&auto=format&fit=crop';">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Tabungan iB Wadiah</h3>
+                            <p class="product-desc">Tabungan aman, bebas riba, bebas biaya bulanan dan mendapatkan bonus
+                                secara periodik.</p>
+                            <a href="tabungan.html" class="btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Tabungan iB Mudharabah -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/tabungan_mudharabah.webp" alt="Tabungan iB Mudharabah"
+                                onerror="this.src='https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=600&auto=format&fit=crop';">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Tabungan iB Mudharabah</h3>
+                            <p class="product-desc">Produk simpanan yang menggunakan akad kerja sama (bagi hasil) antara
+                                nasabah sebagai pemilik dana dan bank sebagai pengelola dana.</p>
+                            <a href="tabungan.html" class="btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Deposito iB Mudharabah -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/deposito_mudharabah.webp" alt="Deposito iB Mudharabah"
+                                onerror="this.src='https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=600&auto=format&fit=crop';">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Deposito iB Mudharabah</h3>
+                            <p class="product-desc">Produk investasi dengan sistem bagi hasil kompetitif yang sesuai
+                                dengan prinsip ekonomi syariah.</p>
+                            <a href="deposito.html" class="btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SECTION GROUP 6: Background 2 -->
+    <div class="bg-section-2">
+        <!-- Pembiayaan Section (Marquee) -->
+        <section class="pembiayaan-section">
+            <h2 class="section-title text-center">Pembiayaan<br>di Artha Pamenang Syariah</h2>
+            
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <!-- Original set -->
+                    <img src="images/pembiayaan_1.webp" alt="Pembiayaan 1" onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_2.webp" alt="Pembiayaan 2" onerror="this.src='https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_3.webp" alt="Pembiayaan 3" onerror="this.src='https://images.unsplash.com/photo-1541359927273-d76820fc43f9?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_4.webp" alt="Pembiayaan 4" onerror="this.src='https://images.unsplash.com/photo-1579621970588-a3f5ce599fac?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_5.webp" alt="Pembiayaan 5" onerror="this.src='https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_6.webp" alt="Pembiayaan 6" onerror="this.src='https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=400&auto=format&fit=crop';">
+                    
+                    <!-- Duplicated set for seamless loop -->
+                    <img src="images/pembiayaan_1.webp" alt="Pembiayaan 1" onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_2.webp" alt="Pembiayaan 2" onerror="this.src='https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_3.webp" alt="Pembiayaan 3" onerror="this.src='https://images.unsplash.com/photo-1541359927273-d76820fc43f9?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_4.webp" alt="Pembiayaan 4" onerror="this.src='https://images.unsplash.com/photo-1579621970588-a3f5ce599fac?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_5.webp" alt="Pembiayaan 5" onerror="this.src='https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=400&auto=format&fit=crop';">
+                    <img src="images/pembiayaan_6.webp" alt="Pembiayaan 6" onerror="this.src='https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=400&auto=format&fit=crop';">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SECTION GROUP 7: Background 3 -->
+    <div class="bg-section-3">
+        <!-- APS Update Section -->
+        <section class="aps-update-section">
+            <div class="container container-wide">
+                <h2 class="section-title text-center text-white">APS Update</h2>
+                
+                <div class="aps-update-card">
+                    <div class="aps-image-col">
+                        <img src="images/aps_update_1.webp" alt="APS Beri Edukasi Literasi Keuangan" 
+                            onerror="this.src='https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop';">
+                        <div class="aps-slider-controls">
+                            <button class="aps-prev" aria-label="Previous">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><polygon points="8 0 8 10 1 5"></polygon></svg>
+                            </button>
+                            <button class="aps-next" aria-label="Next">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><polygon points="2 0 2 10 9 5"></polygon></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="aps-text-col">
+                        <h3 class="aps-title">APS Beri Edukasi Literasi Keuangan Karangtaruna Desa Besuk</h3>
+                        <div class="aps-divider"></div>
+                        <p>Dalam rangka mengedukasi literasi keuangan kepada masyarakat dan sekaligus promosi produk, BPR Syariah menggandeng karang taruna desa Besuk Gurah.</p>
+                        <p>Acara tersebut di gelar pada hari Jum'at, 26 Juni 2026 yang mana telah di ikuti pengurus dan anggota karang taruna desa Besuk. Mereka sangat antusias untuk mengikuti pemaparan materi dari BPR Syariah Artha Pamenang tentang produk produk pembiayaan dan simpanan, literasi keuangan, bahaya pinjol dan terutama materi Sahabat TKI yaitu pembiayaan utk kebutuhan calon TKI</p>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- 7. Info Terbaru Section -->
-    <section class="info-section">
-        <div class="container">
-            <h2 class="section-title text-center">Info Terbaru</h2>
-            <div class="title-underline center-underline"></div>
+    <!-- SECTION GROUP 8: Background 3 (Footer) -->
+    <div class="bg-section-3">
+        <footer class="site-footer">
+            <div class="container container-wide">
+                <div class="footer-grid">
 
-            <div class="info-grid">
+                    <!-- Kolom Kiri: Map + Contact -->
+                    <div class="footer-left-col">
+                        <div class="map-responsive-wrapper">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d100000.0!2d112.033816!3d-7.807098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78574358102481%3A0x51541f04ee07e9fb!2sArtha%20Pamenang%20Syariah%20Kediri!5e0!3m2!1sid!2sus!4v1773738257388!5m2!1sid!2sus"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
 
-                <!-- Poster 1 -->
-                <div class="info-poster">
-                    <img src="images/info1.webp" alt="Info Terbaru 1"
-                        onerror="this.src='https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop';">
-                </div>
-
-                <!-- Poster 2 -->
-                <div class="info-poster">
-                    <img src="images/info2.webp" alt="Info Terbaru 2"
-                        onerror="this.src='https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=600&auto=format&fit=crop';">
-                </div>
-
-                <!-- Poster 3 -->
-                <div class="info-poster">
-                    <img src="images/info3.webp" alt="Info Terbaru 3"
-                        onerror="this.src='https://images.unsplash.com/photo-1591696205602-2f950c417cb9?q=80&w=600&auto=format&fit=crop';">
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. Footer Section -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-
-                <!-- Kolom Kiri: Google Maps -->
-                <div class="footer-map-col">
-                    <div class="map-responsive-wrapper">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d505963.10706433153!2d112.033816!3d-7.807098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78574358102481%3A0x51541f04ee07e9fb!2sArtha%20Pamenang%20Syariah%20Kediri!5e0!3m2!1sid!2sus!4v1773738257388!5m2!1sid!2sus"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h2 class="footer-title">Hubungi Kami</h2>
+                        <ul class="contact-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span><a href="mailto:mailing@arthapamenangsyariah.com">mailing@arthapamenangsyariah.com</a></span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Kantor Pusat : JL. Soekarno Hatta 107A, Tepus - Sukorejo, Kec. Ngasem, Kabupaten
+                                    Kediri, Jawa Timur, 64182</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <span>Telp : 0354-694123</span>
+                            </li>
+                        </ul>
                     </div>
+
+                    <!-- Kolom Kanan: Calendar + Logos -->
+                    <div class="footer-right-col">
+                        <div class="calendar-wrapper">
+                            <img src="images/calendar.webp" alt="Calendar September 2026" onerror="this.src='https://images.unsplash.com/photo-1506784365847-bbad939e9335?q=80&w=800&auto=format&fit=crop';">
+                        </div>
+                        
+                        <div class="footer-logos">
+                            <img src="images/ib.webp" alt="iB">
+                            <img src="images/bprsyariah.webp" alt="BPR Syariah">
+                            <img src="images/himbarsi.webp" alt="Himbarsi">
+                        </div>
+                    </div>
+
                 </div>
-
-                <!-- Kolom Kanan: Contact Info -->
-                <div class="footer-contact-col">
-                    <h2 class="footer-title">Hubungi Kami</h2>
-                    <ul class="contact-list">
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>mailing@arthapamenangsyariah.com</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                            <span>Kantor Pusat : JL. Soekarno Hatta 107A, Tepus - Sukorejo, Kec. Ngasem, Kabupaten
-                                Kediri, Jawa Timur, 64182</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                            </svg>
-                            <span>Telp : 0354-694123</span>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Bagian Bawah Footer: Visitor Counter -->
-            <div class="footer-bottom">
-                <div class="visitor-counter-container">
-                    <span class="visitor-label">Statistik Pengunjung</span>
+                
+                <!-- Visitor Counter (Kept hidden/small if needed or under logos? user didn't mention visitor counter in screenshot but it was in html. I'll put it in left col under contact to preserve it, or remove it? Let's hide it visually or leave it at very bottom). -->
+                <div style="display:none;">
                     <div class="visitor-counter-scripts">
-                        <!-- Teks link asli DITAMPILKAN sepenuhnya (ori) agar mematuhi aturan provider -->
                         <a href='https://www.counters-free.net/'>https://www.counters-free.net</a>
-                        <script type='text/javascript'
-                            src='https://www.freevisitorcounters.com/auth.php?id=852b3a4d00bce881cfc6344b1836bfa77ab8b115'></script>
-                        <script type="text/javascript"
-                            src="https://www.freevisitorcounters.com/en/home/counter/1519255/t/0"></script>
+                        <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=852b3a4d00bce881cfc6344b1836bfa77ab8b115'></script>
+                        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1519255/t/0"></script>
                     </div>
                 </div>
-            </div>
 
-        </div>
-    </footer>
+            </div>
+            
+            <!-- White Bottom Bar -->
+            <div class="footer-bottom-bar">
+                BPR Syariah Artha Pamenang diawasi oleh Otoritas Jasa Keuangan serta merupakan peserta Lembaga Penjamin Simpanan
+            </div>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 
