@@ -1,0 +1,854 @@
+/* =====================================================================
+   Halaman dalam: Profil Perusahaan, Tabungan, Deposito, Pembiayaan, Kontak
+   Style halaman ini dipulihkan dari commit b3fa67b (sebelum redesign landing
+   page) agar halaman dalam tetap tampil seperti sebelumnya.
+   ===================================================================== */
+:root {
+    --shadow-dropdown: 0 10px 30px rgba(14, 102, 18, 0.08);
+}
+
+.corporate-page {
+    position: relative;
+    padding: 60px 0;
+    background-color: var(--bg-white);
+    min-height: 80vh;
+}
+
+.watermark-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%; /* Ukuran watermark di tengah */
+    background-attachment: fixed;
+    opacity: 0.04; /* Sangat transparan agar teks mudah dibaca */
+    pointer-events: none; /* Agar tidak bisa diklik/menghalangi elemen lain */
+    z-index: 0;
+}
+
+.corporate-page .container {
+    position: relative;
+    z-index: 1; /* Pastikan konten berada di atas watermark */
+}
+
+.corp-section {
+    margin-bottom: 60px;
+}
+
+.corp-title {
+    font-size: 2.2rem;
+    color: var(--primary-green-dark);
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--primary-green-light);
+    padding-bottom: 12px;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.corp-subtitle {
+    font-size: 1.5rem;
+    color: var(--primary-green-dark);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.corp-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+/* Style Tabel */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: var(--shadow-soft);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.corp-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px; /* Force table to scroll on tiny screens instead of squishing */
+    background-color: var(--bg-white);
+}
+
+.corp-table th, 
+.corp-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    text-align: left;
+    vertical-align: top;
+}
+
+.corp-table th {
+    background-color: var(--primary-green-dark);
+    color: var(--bg-white);
+    font-weight: 600;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.corp-table tr:nth-child(even) {
+    background-color: rgba(14, 102, 18, 0.02); /* Hijau sangat pudar untuk selang-seling */
+}
+
+.corp-table tr:hover {
+    background-color: rgba(14, 102, 18, 0.05);
+}
+
+/* Teks bantuan di dalam tabel */
+.text-muted {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* Visi Misi Quotes Box */
+.vm-quotes {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.vm-box {
+    flex: 1;
+    background: var(--bg-white);
+    padding: 40px;
+    border-left: 5px solid var(--primary-green);
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+}
+
+.vm-box h4 {
+    color: var(--primary-green-dark);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.vm-box p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* Gambar Organisasi & Jaringan */
+.corp-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Grid Alamat Kantor */
+.office-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.office-card {
+    background: var(--bg-white);
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 24px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    border-top: 4px solid var(--primary-green);
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.office-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
+}
+
+.office-card.main-office {
+    border-top: 4px solid var(--primary-green-dark);
+    background-color: rgba(14, 102, 18, 0.02); /* Highlight untuk kantor pusat */
+}
+
+.office-name {
+    font-weight: 700;
+    color: var(--primary-green-dark);
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+
+.office-detail {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* --- Mobile Responsiveness Khusus Halaman Corporate --- */
+@media (max-width: 768px) {
+    .corporate-page {
+        padding: 40px 0;
+    }
+    
+    .watermark-bg {
+        background-size: 90%; /* Perbesar watermark di HP */
+    }
+
+    .corp-title {
+        font-size: 1.8rem;
+    }
+    
+    .corp-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .corp-text {
+        text-align: left; /* Rata kiri lebih nyaman dibaca di HP */
+    }
+
+    .vm-quotes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .vm-box {
+        padding: 30px 20px;
+    }
+
+    .office-grid {
+        grid-template-columns: 1fr; /* 1 kolom di HP */
+        gap: 20px;
+    }
+}
+
+.product-page {
+    padding: 60px 0 80px;
+    background-color: var(--bg-white);
+    min-height: 80vh;
+}
+
+.product-container {
+    max-width: 1000px; /* Lebar dibatasi agar teks & konten lebih nyaman dibaca */
+}
+
+/* Section 1: Title */
+.product-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-title {
+    font-size: 2.2rem;
+    color: var(--primary-green-dark);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+/* Section 2: Poster Image */
+.product-poster {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.product-poster img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-dropdown);
+    border: 1px solid rgba(14, 102, 18, 0.05);
+}
+
+/* Section 3: Jenis Tabungan */
+.tabungan-section {
+    margin-bottom: 60px;
+}
+
+.tabungan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tabungan-card {
+    background: var(--bg-white);
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 35px 25px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    border-top: 4px solid var(--primary-green);
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabungan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-card);
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(14, 102, 18, 0.08);
+    color: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.tabungan-title {
+    font-size: 1.25rem;
+    color: var(--primary-green-dark);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.tabungan-desc {
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.tabungan-desc strong {
+    color: var(--primary-green-dark);
+}
+
+/* Section 4: Syarat */
+.requirement-section {
+    background: rgba(14, 102, 18, 0.03);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(14, 102, 18, 0.08);
+}
+
+.req-title {
+    font-size: 1.5rem;
+    color: var(--primary-green-dark);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.req-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.req-list li {
+    font-size: 1.05rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.req-footnote {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 15px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding-top: 15px;
+}
+
+
+/* --- Mobile Responsiveness Khusus Halaman Produk --- */
+@media (max-width: 992px) {
+    .tabungan-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tabungan-grid .tabungan-card:last-child {
+        grid-column: span 2;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-page {
+        padding: 40px 0;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .product-poster img {
+        max-width: 100%;
+        border-radius: var(--radius-md);
+    }
+
+    .tabungan-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tabungan-grid .tabungan-card:last-child {
+        grid-column: span 1;
+        max-width: 100%;
+    }
+
+    .tabungan-card {
+        padding: 25px 20px;
+    }
+
+    .requirement-section {
+        padding: 30px 20px;
+    }
+    
+    .req-title {
+        font-size: 1.35rem;
+    }
+}
+
+.product-desc-section {
+    margin-bottom: 50px;
+}
+
+.product-paragraph {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    margin-bottom: 16px;
+    text-align: center; /* Rata tengah agar elegan seperti poster */
+}
+
+.product-paragraph strong {
+    color: var(--primary-green-dark);
+}
+
+.keunggulan-box {
+    max-width: 600px;
+    margin: 40px auto 0;
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary-green);
+    box-shadow: var(--shadow-soft);
+}
+
+.keunggulan-box .keunggulan-title {
+    font-size: 1.25rem;
+    color: var(--primary-green-dark);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.keunggulan-list {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.keunggulan-list li {
+    font-size: 1rem;
+    color: var(--text-main);
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Kustomisasi Bullet Poin Keunggulan */
+.keunggulan-list li::before {
+    content: '•';
+    color: var(--primary-green);
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+
+.jangka-waktu-section {
+    margin-bottom: 60px;
+    padding-top: 20px;
+}
+
+.waktu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.waktu-card {
+    background: var(--bg-white);
+    border: 1px solid rgba(14, 102, 18, 0.1);
+    padding: 25px 10px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), background-color var(--transition-smooth);
+}
+
+.waktu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
+    background-color: var(--primary-green);
+}
+
+.waktu-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-green-dark);
+    line-height: 1;
+    margin-bottom: 5px;
+    transition: color var(--transition-smooth);
+}
+
+.waktu-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: color var(--transition-smooth);
+}
+
+.waktu-card:hover .waktu-number,
+.waktu-card:hover .waktu-text {
+    color: var(--bg-white); /* Berubah putih saat di-hover */
+}
+
+/* Ordered List Khusus Syarat Deposito */
+.req-list-numbered {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.req-list-numbered li {
+    font-size: 1.05rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* --- Mobile Responsiveness Khusus Deposito --- */
+@media (max-width: 768px) {
+    .product-paragraph {
+        text-align: left; /* Rata kiri di mobile agar mudah dibaca */
+    }
+
+    .keunggulan-box {
+        padding: 25px 20px;
+    }
+
+    /* Di mobile, grid jangka waktu menjadi 2x2 agar tetap rapi */
+    .waktu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .waktu-card {
+        padding: 20px 10px;
+    }
+
+    .waktu-number {
+        font-size: 2rem;
+    }
+    
+    .req-list-numbered li {
+        font-size: 1rem;
+    }
+}
+
+.pembiayaan-section, .segmen-section, .skema-section {
+    margin-bottom: 60px;
+}
+
+/* Grid Jenis Pembiayaan (3 Kolom) */
+.pembiayaan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pembiayaan-card {
+    background: var(--bg-white);
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 35px 25px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    border-top: 4px solid var(--primary-green);
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+}
+
+.pembiayaan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-card);
+}
+
+.pembiayaan-title {
+    font-size: 1.25rem;
+    color: var(--primary-green-dark);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.pembiayaan-desc {
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Segmen Pembiayaan Box */
+.segmen-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--bg-white);
+    padding: 30px 40px;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(14, 102, 18, 0.1);
+    box-shadow: var(--shadow-soft);
+}
+
+.segmen-list {
+    list-style: none;
+    padding: 0;
+}
+
+.segmen-list li {
+    font-size: 1.05rem;
+    color: var(--text-main);
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 32px;
+    font-weight: 500;
+}
+
+.segmen-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Checkmark khusus list segmen */
+.segmen-list li::before {
+    content: '✓';
+    color: var(--primary-green);
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Grid Skema Pembiayaan (2 Kolom) */
+.skema-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skema-card {
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    border-left: 5px solid var(--primary-green);
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-right: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.skema-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
+}
+
+.skema-title {
+    font-size: 1.35rem;
+    color: var(--primary-green-dark);
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(14, 102, 18, 0.1);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.skema-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skema-list li {
+    font-size: 1rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* --- Mobile Responsiveness Khusus Pembiayaan --- */
+@media (max-width: 992px) {
+    .pembiayaan-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pembiayaan-grid .pembiayaan-card:last-child {
+        grid-column: span 2;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .pembiayaan-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pembiayaan-grid .pembiayaan-card:last-child {
+        grid-column: span 1;
+        max-width: 100%;
+    }
+
+    .pembiayaan-card {
+        padding: 25px 20px;
+    }
+
+    .segmen-box {
+        padding: 25px 20px;
+    }
+
+    .skema-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skema-card {
+        padding: 25px 20px;
+    }
+}
+
+.kontak-page {
+    padding: 60px 0 100px;
+    min-height: 70vh;
+}
+
+.kontak-wrapper {
+    max-width: 650px; /* Dibatasi agar tidak terlalu lebar dan kaku di layar besar */
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; /* Pastikan berada di atas layer watermark */
+}
+
+.kontak-card {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    padding: 50px;
+    box-shadow: var(--shadow-dropdown);
+    border: 1px solid rgba(14, 102, 18, 0.05);
+    border-top: 6px solid var(--primary-green); /* Aksen warna hijau tebal di atas */
+    text-align: center;
+}
+
+.kontak-item {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.kontak-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.kontak-subtitle {
+    color: var(--primary-green-dark);
+    font-size: 1.35rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.kontak-text {
+    color: var(--text-main);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* --- Mobile Responsiveness Khusus Halaman Kontak --- */
+@media (max-width: 768px) {
+    .kontak-page {
+        padding: 40px 0 60px;
+    }
+
+    .kontak-card {
+        padding: 40px 25px;
+    }
+
+    .kontak-item {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+
+    .kontak-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .kontak-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+
+/* --- Footer halaman dalam (peta + kontak + statistik pengunjung) --- */
+.footer-map-col {
+    height: auto;
+    border: 0;
+    overflow: visible;
+}
+
+.footer-map-col .map-responsive-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-map-col .map-responsive-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer-contact-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

@@ -528,21 +528,21 @@ h3 {
 
 /* --- Background Wrappers --- */
 .bg-section-1 {
-    background-image: url('images/bg1.webp');
+    background-image: url('/images/bg1.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .bg-section-2 {
-    background-image: url('images/bg2.webp');
+    background-image: url('/images/bg2.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .bg-section-3 {
-    background-image: url('images/bg3.webp');
+    background-image: url('/images/bg3.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
