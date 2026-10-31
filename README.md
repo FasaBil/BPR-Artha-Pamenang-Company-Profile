@@ -14,7 +14,7 @@ npm run preview   # coba hasil build
 ## Struktur
 
 ```
-index.html            entry Vite (#root) + blok visitor counter
+index.html            entry Vite (#root)
 public/images/        semua gambar (diakses sebagai /images/nama.webp)
 src/
   main.jsx, App.jsx   bootstrap + daftar route
@@ -30,10 +30,9 @@ src/
 
 ## Catatan
 
-- **Visitor counter**: kodenya ada di `index.html` (`#visitor-counter-host`) dan
-  sengaja tidak diubah karena skrip pihak ketiga memakai `document.write`.
-  Komponen `VisitorCounter` hanya memindahkan node itu ke footer.
-- **Hosting**: aplikasi ini SPA dengan route bersih (`/tabungan`, `/kontak`, ...).
-  Server harus mengarahkan semua path ke `index.html` (fallback SPA).
+- **Deploy ke Netlify**: konfigurasi ada di `netlify.toml` (build `npm run build`,
+  publish `dist`, Node 22, dan fallback SPA agar `/tabungan`, `/kontak`, ... tidak 404).
+  Cukup hubungkan repo di Netlify; tidak perlu mengisi setting build manual.
+  Untuk hosting lain, arahkan semua path ke `index.html`.
 - **Kalender footer**: komponen `Calendar` menampilkan bulan berjalan secara otomatis,
   tanpa library eksternal.

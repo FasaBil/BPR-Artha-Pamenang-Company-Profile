@@ -1,0 +1,15 @@
+# Konfigurasi deploy Netlify
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Vite 8 membutuhkan Node >= 20.19 / 22.12
+  NODE_VERSION = "22"
+
+# SPA fallback: semua path (mis. /tabungan, /kontak) dilayani index.html.
+# File statis yang benar-benar ada (aset, gambar) tetap dilayani apa adanya.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
