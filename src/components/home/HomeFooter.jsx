@@ -1,3 +1,4 @@
+import Calendar from '../Calendar.jsx';
 import ContactList from '../ContactList.jsx';
 import MapEmbed from '../MapEmbed.jsx';
 import VisitorCounter from '../VisitorCounter.jsx';
@@ -19,7 +20,7 @@ export default function HomeFooter() {
                         {/* Kolom kanan: kalender + logo */}
                         <div className="footer-right-col">
                             <div className="calendar-wrapper">
-                                <img src="/images/calendar.webp" alt="Kalender" />
+                                <Calendar />
                             </div>
 
                             <div className="footer-logos">
