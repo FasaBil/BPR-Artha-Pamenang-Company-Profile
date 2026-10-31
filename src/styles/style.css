@@ -1207,45 +1207,6 @@ h3 {
     flex-shrink: 0;
 }
 
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-}
-
-.visitor-counter-container {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 15px 30px;
-    border-radius: var(--radius-lg);
-    backdrop-filter: blur(5px);
-}
-
-.visitor-label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    color: var(--accent-gold);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.visitor-counter-scripts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.visitor-counter-scripts a {
-    color: var(--text-light);
-    text-decoration: underline;
-    font-size: 0.8rem;
-    opacity: 0.5;
-}
-
 @media (max-width: 992px) {
     .profile-container {
         flex-direction: column;

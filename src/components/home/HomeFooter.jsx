@@ -1,7 +1,6 @@
 import Calendar from '../Calendar.jsx';
 import ContactList from '../ContactList.jsx';
 import MapEmbed from '../MapEmbed.jsx';
-import VisitorCounter from '../VisitorCounter.jsx';
 
 /** Footer landing page: peta, kontak, kalender, logo, dan bar pengawasan. */
 export default function HomeFooter() {
@@ -30,8 +29,6 @@ export default function HomeFooter() {
                             </div>
                         </div>
                     </div>
-
-                    <VisitorCounter hidden />
                 </div>
 
                 <div className="footer-bottom-bar">

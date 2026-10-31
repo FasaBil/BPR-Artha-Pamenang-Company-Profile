@@ -10,27 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <style>
-        /* Sebelum dipindah React ke footer, counter tidak ditampilkan */
-        body > #visitor-counter-host { display: none; }
-    </style>
 </head>
 
 <body>
     <div id="root"></div>
-
-    <!--
-        Visitor counter: kode di bawah SENGAJA dibiarkan apa adanya (tidak diubah).
-        Skrip pihak ketiga ini memakai document.write sehingga harus dieksekusi
-        oleh parser HTML, bukan lewat React. Komponen <VisitorCounter /> hanya
-        memindahkan node ini ke footer (tanpa menyentuh isinya).
-    -->
-    <div id="visitor-counter-host" class="visitor-counter-scripts">
-        <a href='https://www.counters-free.net/'>https://www.counters-free.net</a>
-        <script type='text/javascript'
-            src='https://www.freevisitorcounters.com/auth.php?id=852b3a4d00bce881cfc6344b1836bfa77ab8b115'></script>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1519255/t/0"></script>
-    </div>
 
     <script type="module" src="/src/main.jsx"></script>
 </body>
