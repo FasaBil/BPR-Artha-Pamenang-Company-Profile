@@ -2,7 +2,7 @@
 
 Website company profile, dibangun dengan React + Vite + React Router.
 
-## Menjalankan
+## Cara Menjalankan
 
 ```bash
 npm install
